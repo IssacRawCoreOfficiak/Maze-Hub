@@ -1,0 +1,156 @@
+-- Load Fluent
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+print("SCRIPT LOADED")
+Window:SelectTab(1)
+Fluent:Notify({ Title = "Message", Content = "The script has been loaded." })
+
+-- execute warning
+Fluent:Notify({ Title = "Zythornis Says", Content = "Thanks For Execute My Script!:D" })
+print("credits to Zythronis and IssacRawCore")
+
+local Window = Fluent:CreateWindow({
+    Title = "THE MAZE SCRIPT  2.0.1" .. Fluent.Version,
+    TabWidth = 160, Size = UDim2.fromOffset(580, 460), Theme = "Dark"
+    print("window loaded")
+})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+-- Paragraphs
+print("Paragraphs Loaded")
+Tabs.Main:AddParagraph({ Title = "Credits", Content = "A Script By IssacRawCore And Zythronis" })
+-- buttons
+Tabs.Main:AddButton({ Title = "infinity jump", Callback = function()
+Fluent:Notify({ Title = "Infinty Jump Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/2wgbZ6Xd")))
+print("buttons loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "WalkSpeed", Callback = function()
+Fluent:Notify({ Title = "Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/cbLGUDcF"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "ESP MONSTERS", Callback = function()
+Fluent:Notify({ Title = "ESP Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IssacRawCoreOfficiak/The-maze-esp/refs/heads/main/themazeesp.lua"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "ESP PLAYERS", Callback = function()
+Fluent:Notify({ Title = "ESP Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IssacRawCoreOfficiak/Player-Esp/refs/heads/main/esp-players.lua"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "GOD MODE", Callback = function()
+Fluent:Notify({ Title = "GodMODE!", Content = "God Mode Executed!" })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IssacRawCoreOfficiak/godmode/refs/heads/main/godmode.lua"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "CHAT HAX (beta)", Callback = function()
+Fluent:Notify({ Title = "Hax-Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "ANTI BAN/KICK", Callback = function()
+Fluent:Notify({ Title = "Anti Ban & Kick Status", Content = "Success!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/VLe9pcs2"))()
+print("Script Loaded")
+end})
+
+-- Toggles
+local Toggle = Tab:AddToggle("suicide", 
+{
+    Title = "suicide", 
+    Description = "not working!",
+    Default = false, -- esse "," e preciso coloque em qualquer situação 
+    Callback = function(state)
+	if state then
+	    print("Toggle On")
+	else
+	    print("Toggle Off")
+        end
+    end 
+})
+
+local Colorpicker = Tabs.Main:AddColorpicker("Colorpicker", {
+    Title = "Choose A Color",
+    Default = Color3.fromRGB(255, 0, 0) -- principal color (red).
+Colorpicker:OnChanged(function()
+        print("Colorpicker changed:", Colorpicker.Value)
+    end)
+    
+    Colorpicker:SetValueRGB(Color3.fromRGB(0, 255, 140))
+
+    local TColorpicker = Tabs.Main:AddColorpicker("TransparencyColorpicker", {
+        Title = "Colorpicker",
+        Description = "but you can change the transparency.",
+        Transparency = 0,
+        Default = Color3.fromRGB(96, 205, 255)
+    })
+
+    TColorpicker:OnChanged(function()
+        print(
+            "TColorpicker changed:", TColorpicker.Value,
+            "Transparency:", TColorpicker.Transparency
+        )
+    end)
+
+
+Tabs.Main:AddButton({ Title = "TROLL (CMD GUI)", Callback = function()
+Fluent:Notify({ Title = "Execution Status", Content = "Exploit Loaded With Keyboard" })
+loadstring(game:HttpGet("https://pastebin.com/raw/VNtyMuFL"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+print("TROLL SCRIPTS LOADED!")
+end})
+
+Tabs.Main:AddButton({ Title = " BOOMBOX FE", Callback = function()
+Fluent:Notify({ Title = "BoomBox", Content = "Music Time!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/UAAQumnH"))()
+print("Script Loaded")
+end})
+
+Tabs.Main:AddButton({ Title = "Baldi FE", Callback = function()
+Description = "Restart To Back To Normal Or Restart Your Game."
+Fluent:Notify({ Title = "Crazy Baldi", Content = "Math Time!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/HE6s4SAW"))()
+print("your are baldi..")
+end})
+
+Tabs.Main:AddButton({ Title = "ADMIN COMANDS", Callback = function()
+Description = "You Can Ban/Kick And Etc"
+Fluent:Notify({ Title = "Status", Content = "Exploits Executed!" })
+loadstring(game:HttpGet("https://pastebin.com/raw/i4eRwyHA"))() 
+print("ADMIN COMMANDS ACCESS")
+end})
+
+Tabs.Main:AddButton({ Title = "Doors Spawner", Callback = function()
+Fluent:Notify({ Title = "Status", Content = "Doors Exploits Executed!" })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/althan99/doors-entity-spawner/main/Script"))()
+print("yoooooo")
+end})
+
+Tabs.Main:AddButton({ Title = "TouchXKILLER", Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Test-19936"))() 
+Fluent:Notify({ Title = "Status", Content = "Exploits Executed!" })
+end})
+
+Tabs.Main:AddButton({ Title = "change theme", Callback = function()
+Fluent:Notify({ Title = "Status", Content = "to get dark theme again try dark mode button"})
+theme = Light
+end})
+
+Tabs.Main:AddButton({ Title = "dark mode", Callback = function()
+Fluent:Notify({ Title = "Status", Content = "Dark Theme Back!" })
+theme = Dark
+end})
+
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+print("Save Complete")
